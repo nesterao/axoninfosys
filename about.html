@@ -25,36 +25,43 @@
 
 <body>
   <!-- ====== Navbar Section Start -->
-  <div class="top-banner fixed top-0 z-50 hidden w-full bg-white px-5 py-2 lg:flex">
+  <div class="max-h-20 top-banner fixed top-0 z-50 hidden w-full bg-white px-5 py-2 lg:flex">
     <div class="container flex justify-between ">
       <a href="index.html" class="navbar-logo">
-        <img src="assets/images/logo/uplogo2.svg" alt="logo" class="h-8 header-logo" />
+        <img src="assets/images/logo/uplogo2.svg" alt="logo" class="max-h-16 header-logo" />
       </a>
-      <div class="my-auto text-primary ">
-        <ul class="hidden lg:flex sm:space-x-0 lg:space-x-4">
+      <div class="my-auto text-primary">
+        <ul class="hidden xl:flex sm:space-x-0 lg:space-x-4 items-center">
           <li class="">
             <i class="lni lni-map-marker icon align-middle text-secondary"></i>
-            <h5 class="inline text-sm align-middle">B30/9 Adjuma Crescent, South Industrial Area, Accra</h5>
+            <h5 class="inline text-sm align-middle">No. 11 Adjuma Crescent, South Industrial Area, Accra</h5>
           </li>
           <li class="">
             <i class="lni lni-envelope icon align-middle text-secondary"></i>
             <h5 class="inline text-sm align-middle">info@axoninfosystems.com</h5>
           </li>
           <li>
-            <i class="lni lni-phone icon align-middle text-secondary"></i>
-            <h5 class="inline text-sm align-middle">(+233) 204-330035</h5>
+            <div class="grid-col-1">
+              <i class="lni lni-phone icon align-middle text-secondary"></i>
+              <h5 class="inline text-sm align-middle">(+233) 204-330035</h5>
+            </div>
+            <div class="grid-col-1">
+              <i class="lni lni-phone icon align-middle text-secondary"></i>
+              <h5 class="inline text-sm align-middle">(+233) 204-330036</h5>
+            </div>
+
           </li>
         </ul>
       </div>
       <a href="contact.html"
-        class="text-sm rounded-md border shadow-sm px-4 py-2 font-normal text-primary hover:bg-primary/90 hover:text-white hover:shadow-lg transition duration-400 ease-in-out">
+        class="text-sm rounded-md border shadow-sm px-4 py-2 font-normal text-primary justify-center text-center items-center align-middle self-center hover:bg-primary/90 hover:text-white hover:shadow-lg transition duration-400 ease-in-out">
         Contact Us
       </a>
     </div>
   </div>
 
   <div
-    class="ud-header sticky bg-transparent bg-white lg:bg-primary/80 top-0 lg:top-[50px] left-0 z-40 w-full flex items-center">
+    class="ud-header sticky bg-white lg:bg-primary/80 top-0 lg:top-[80px] lg:h-[80px] left-0 z-40 w-full flex items-center">
     <div class="container">
       <div class="flex items-center justify-between relative">
         <div class="flex lg:hidden px-4 w-64 max-w-full">
@@ -81,6 +88,7 @@
                   <div
                     class="submenu hidden relative lg:absolute sm:max-w-[360px] md:w-[480px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300">
                     <div class="pl-4 md:pl-0">
+
                       <div class="group relative flex gap-x-1 rounded-lg p-2  text-xs md:text-sm hover:bg-gray-50">
                         <div class="flex-auto">
                           <a href="tax_man_solution.html" class="block font-semibold text-gray-600">
@@ -276,7 +284,7 @@
 
 
   <!-- Hero section -->
-  <div class="relative isolate -z-10">
+  <div class="relative isolate -z-10 pt-10">
     <svg
       class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,primary,transparent)]"
       aria-hidden="true">
@@ -381,12 +389,14 @@
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
         <div class="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our people</h2>
-          <p class="mt-6 text-xl leading-8 text-gray-600">At Axon Information Systems, our people are our greatest
+          <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">At Axon Information Systems, our
+            people are our greatest
             asset. Our team is made up of a diverse group of passionate, dedicated, and innovative professionals who
             work tirelessly to deliver top-notch SaaS solutions. Our strength lies in our collective expertise spanning
             technology, business, and industry-specific knowledge.</p>
 
-          <p class="mt-6 text-base leading-7 text-gray-600">We believe in continuous learning and growth. Our team is
+          <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">We believe in continuous learning
+            and growth. Our team is
             committed to staying at the forefront of technological advancements and industry trends, ensuring we provide
             the most up-to-date and effective solutions for our clients.</p>
         </div>
@@ -398,7 +408,7 @@
           <div
             class="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
             <div class="order-first flex w-64 flex-none justify-start self-start lg:w-auto">
-              <img src="assets/images/about/about-7.jpg" alt=""
+              <img src="assets/images/about/about-8.jpg" alt=""
                 class="aspect-[5/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover">
             </div>
             <div class="video-player order-first flex w-64 flex-none justify-end self-end lg:w-auto">

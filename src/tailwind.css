@@ -3,13 +3,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap'); */
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Poppins' , sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .sticky {
@@ -53,12 +52,11 @@ body {
   @apply top-[-8px] rotate-[135deg];
 }
 
-
-.title-sequence{
+.title-sequence {
   transition: opacity 1s linear;
 }
 
-.fade{
+.fade {
   opacity: 0;
 }
 
@@ -75,7 +73,8 @@ body {
   20% {
     opacity: 0;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 1;
     transform: translateY(0%);
   }
@@ -83,4 +82,54 @@ body {
 
 .container {
   @apply px-8 mx-auto;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  height: 30rem;
+  max-width: 100%;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators .carousel-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+}
+
+.carousel-indicators .carousel-indicator.checked {
+  background-color: white;
 }

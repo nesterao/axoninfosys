@@ -59,8 +59,8 @@
       el.querySelector(".submenu").classList.toggle("hidden");
     });
   });
-  
-  
+
+
 
   //====== header scrolling content
 
@@ -138,7 +138,28 @@
     scrollTo(document.documentElement);
   };
 
-  
+  const indicators = document.querySelectorAll('.carousel-indicator');
+  const controls = document.querySelectorAll('.carousel-open');
+
+  for (let i = 0; i < controls.length; i++) {
+    controls[i].addEventListener('change', function () {
+      for (let j = 0; j < indicators.length; j++) {
+        if (j === i) {
+          indicators[j].classList.add('checked');
+        } else {
+          indicators[j].classList.remove('checked');
+        }
+      }
+    });
+  }
+
+  let index = 0;
+  setInterval(function () {
+    index = (index + 1) % controls.length;
+    controls[index].checked = true;
+  }, 3000); // Change slide every 3 seconds
+
+
 })();
 
 

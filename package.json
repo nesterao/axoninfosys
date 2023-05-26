@@ -15,5 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "flowbite": "^1.6.5"
   }
 }
